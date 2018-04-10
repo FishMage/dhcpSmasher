@@ -18,7 +18,7 @@ class sniffer():
         print "Starting DHCP Monitoring..."
 
 if __name__=="__main__":
-    sniffer = sniffer()
-    sniffer.start()
+    snif = sniffer()
+    snif.start()
 
     
