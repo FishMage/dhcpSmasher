@@ -16,7 +16,8 @@ class sniffer():
         if pkt[DHCP].options[0][1]==6:
             print "NAK Received"
         if pkt[DHCP]:
-            print "src: "+str(pkt[IP].src)+"--> dst: " + str(pkt[IP].dst)
+            print "IP - src: "+str(pkt[IP].src)+"--> dst: " + str(pkt[IP].dst)
+            print "MAC- src: "+str(pkt[Ether].src)+"--> dst: " + str(pkt[Ether].dst)
             
 
     def listen(self):
